@@ -9,16 +9,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
 
-const App = () => {
+function App () {
     const backgroundStyle = {
         backgroundImage: `url(${bg})`,
         backgroundSize: '1800px',
         minHeight: '700px',
-        // backgroundPosition: 'right 45% top 5%',
-        // backgroundAttachment: 'fixed',
-        // backgroundStyle:'cover',
-        // backgroundRepeat: 'no-repeat',
-
     };
 
     const [menuItems, setMenuItems] = useState([]);
@@ -36,8 +31,18 @@ const App = () => {
         <Router>
             <div style={backgroundStyle}>
                 {/* Bootstrap Navbar */}
-                <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand as={Link} to="/">Nutrition Analyzer</Navbar.Brand>
+                {/*navbar1 */}
+                
+                <Navbar style={{paddingLeft: '20px'}} bg="dark" variant="dark">
+                    <Navbar.Brand as={Link} to="/" style={{fontSize:'28px'}}>Nutrition Analyzer</Navbar.Brand>
+                    {/* <Nav className="mr-auto"> */}
+                        {/* <Nav.Link as={Link} to="/menu-summary-editable">Menu Summary(Editable)</Nav.Link>
+                        <Nav.Link as={Link} to="/menu-nutrition-summary">Menu Nutrition Summary</Nav.Link> */}
+                    {/* </Nav> */}
+                </Navbar>
+                {/*navbar2 */}
+                <Navbar style={{paddingLeft: '20px', marginBottom: '20px'}} bg="dark" variant="dark">
+                    {/* <Navbar.Brand as={Link} to="/">Nutrition Analyzer</Navbar.Brand> */}
                     <Nav className="mr-auto">
                         <Nav.Link as={Link} to="/menu-summary-editable">Menu Summary(Editable)</Nav.Link>
                         <Nav.Link as={Link} to="/menu-nutrition-summary">Menu Nutrition Summary</Nav.Link>

@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button'; 
 
-const MenuSummary = ({ menuItems, onFoodRemoved }) => {
+function MenuSummary ({ menuItems, onFoodRemoved }) {
     return (
         <div>
             <h2 style={{color:"olive",fontSize:"150%"}}>Menu Summary (Editable)</h2>

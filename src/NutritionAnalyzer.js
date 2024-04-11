@@ -3,7 +3,7 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button'; 
 
-const NutritionAnalyzer = ({ onFoodAdded }) => {
+function NutritionAnalyzer ({ onFoodAdded }) {
     const [quantity, setQuantity] = useState('');
     const [unit, setUnit] = useState('');
     const [food, setFood] = useState('');

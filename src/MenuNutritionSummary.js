@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button'; 
 
-const MenuNutritionSummary = ({ menuItems }) => {
+function MenuNutritionSummary ({ menuItems }) {
     const nutrientKeys = {  //Only a few common nutrients are displayed
         ENERC_KCAL: 'Calories',
         PROCNT: 'Protein',
@@ -53,7 +53,7 @@ const MenuNutritionSummary = ({ menuItems }) => {
             <p style={{color:"grey",fontSize:"90%"}}>Children (ages 4 to 12) need an average of 1,500 calories a day. However, individual needs vary.</p>
             <p style={{color:"#0D6EFD",fontSize:"95%"}}>Source: <a href='https://www.ontario.ca/page/calories-menus#:~:text=Adults%20and%20youth%20(ages%2013%20and%20older)%20need%20an%20average,to%202%2C400%20calories%20per%20day.'>Ontario.ca</a></p>
             <div>
-            <Button variant="outline-success" onClick={() => window.print()}>Print this page</Button>
+            <Button size='sm' variant="outline-success" onClick={() => window.print()}>Print this page</Button>
             </div>
             <footer style={{ marginTop: '20px', textAlign: 'center', color: '#666' , fontSize:"90%"}}>
                 <p>&copy; 2024 CPAN144 Yan & Tina</p>
