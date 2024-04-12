@@ -110,7 +110,7 @@ function NutritionAnalyzer ({ onFoodAdded }) {
             )}
             {errorMessage && <p>{errorMessage}</p>}
             <p style={{color:"#0D6EFD",fontSize:"95%"}}>Source: <a href='https://www.edamam.com/'>Edamam Nutrition Analysis</a></p>
-            <footer style={{ marginTop: '20px', textAlign: 'center', color: '#666', fontSize:"90%" }}>
+            <footer style={{ textAlign: 'center', color: '#666', fontSize:"90%" }}>
                 <p>&copy; 2024 CPAN144 Yan & Tina</p>
             </footer>
         </div>

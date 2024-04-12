@@ -34,7 +34,7 @@ function App () {
                 {/*navbar1 */}
                 
                 <Navbar style={{paddingLeft: '20px'}} bg="dark" variant="dark">
-                    <Navbar.Brand as={Link} to="/" style={{fontSize:'28px'}}>Nutrition Analyzer</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/" style={{fontSize:'28px', fontWeight: 'bold'}}>Nutrition Analyzer</Navbar.Brand>
                     {/* <Nav className="mr-auto"> */}
                         {/* <Nav.Link as={Link} to="/menu-summary-editable">Menu Summary(Editable)</Nav.Link>
                         <Nav.Link as={Link} to="/menu-nutrition-summary">Menu Nutrition Summary</Nav.Link> */}
