@@ -55,8 +55,8 @@ function MenuNutritionSummary ({ menuItems }) {
             <div>
             <Button size='sm' variant="outline-success" onClick={() => window.print()}>Print this page</Button>
             </div>
-            <footer style={{ marginTop: '20px', textAlign: 'center', color: '#666' , fontSize:"90%"}}>
-                <p>&copy; 2024 CPAN144 Yan & Tina</p>
+            <footer cl={{ marginTop: '20px', textAlign: 'center', color: '#666', fontSize:"90%" }}>
+                <p style={{marginTop:"20px"}}>&copy; 2024 CPAN144 Yan & Tina</p>
             </footer>
         </div>
     );
@@ -64,5 +64,5 @@ function MenuNutritionSummary ({ menuItems }) {
 
 export default MenuNutritionSummary;
 
-//test
+
 

@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
+import avocadoImage from './image/avocado.png';
 
 function App () {
     const backgroundStyle = {
@@ -32,9 +33,9 @@ function App () {
             <div style={backgroundStyle}>
                 {/* Bootstrap Navbar */}
                 {/*navbar1 */}
-                
                 <Navbar style={{paddingLeft: '20px'}} bg="dark" variant="dark">
                     <Navbar.Brand as={Link} to="/" style={{fontSize:'28px', fontWeight: 'bold'}}>Nutrition Analyzer</Navbar.Brand>
+                    <img src={avocadoImage} alt="Avocado" style={{ width: '40px', marginRight: '10px' }} />
                     {/* <Nav className="mr-auto"> */}
                         {/* <Nav.Link as={Link} to="/menu-summary-editable">Menu Summary(Editable)</Nav.Link>
                         <Nav.Link as={Link} to="/menu-nutrition-summary">Menu Nutrition Summary</Nav.Link> */}

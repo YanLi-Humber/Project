@@ -19,7 +19,7 @@ function MenuSummary ({ menuItems, onFoodRemoved }) {
                 <Button variant="outline-success" onClick={() => window.print()}>Print this page</Button>
             </div>
             <footer cl={{ marginTop: '20px', textAlign: 'center', color: '#666', fontSize:"90%" }}>
-                <p>&copy; 2024 CPAN144 Yan & Tina</p>
+                <p style={{marginTop:"20px"}}>&copy; 2024 CPAN144 Yan & Tina</p>
             </footer>
         </div>
     );
