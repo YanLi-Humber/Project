@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button'; 
+import Section from './Section';
 
 function NutritionAnalyzer ({ onFoodAdded }) {
     const [quantity, setQuantity] = useState('');
@@ -76,8 +77,9 @@ function NutritionAnalyzer ({ onFoodAdded }) {
     };
 
     return (
+        <Section title="Nutrition Analyzer">
         <div>
-            <h2 style={{color:"olive",fontSize:"150%"}}>Nutrition Analyzer</h2>
+            {/* <h2 style={{color:"olive",fontSize:"150%"}}>Nutrition Analyzer</h2> */}
             <p style={{color:"grey",fontSize:"105%"}}>Please provide the amount of food you want to look up.</p>
             <input style={{color:"grey",fontSize:"95%"}} type="text" name="quantity" value={quantity} onChange={handleInputChange} placeholder="Enter quantity" />
             {/*onChange event handler is added to the input fields to update the state when the input value changes*/}
@@ -109,11 +111,16 @@ function NutritionAnalyzer ({ onFoodAdded }) {
                 </div>
             )}
             {errorMessage && <p>{errorMessage}</p>}
-            <p style={{color:"#0D6EFD",fontSize:"95%"}}>Source: <a href='https://www.edamam.com/'>Edamam Nutrition Analysis</a></p>
+            <p style={{marginTop:'10px', paddingLeft:'10px', color:"#0D6EFD",fontSize:"80%"}}>Source: <a href='https://www.edamam.com/'>Edamam Nutrition Analysis</a></p>
+            <div>
+            <Button size='sm' variant="outline-success" onClick={() => window.print()}>Print this page</Button>
+            </div>
             <footer cl={{ marginTop: '20px', textAlign: 'center', color: '#666', fontSize:"90%" }}>
-                <p style={{marginTop:"20px"}}>&copy; 2024 CPAN144 Yan & Tina</p>
+                <p style={{marginTop:"20px", textAlign: 'center', color: '#666', fontSize:"90%"}}>&copy; 2024 CPAN144 Yan & Tina</p>
             </footer>
+            
         </div>
+        </Section>
     );
 };
 
